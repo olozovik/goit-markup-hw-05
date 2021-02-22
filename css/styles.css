@@ -18,7 +18,7 @@
   --team-svg-white-color: #ffffff;
   --footer-social-trnsp-white: rgba(255, 255, 255, 0.1);
 
-  --transition-var: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-var: 3250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -117,6 +117,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+
+  transition: color var(--transition-var);
 }
 
 .current {
@@ -156,6 +158,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: currentColor;
+
+  transition: color var(--transition-var);
 }
 
 .contacts-icon-envelope {
@@ -173,7 +177,6 @@ body {
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 /* FOOTER */
@@ -255,6 +258,8 @@ body {
 
   border-radius: 50%;
   background-color: var(--footer-social-trnsp-white);
+
+  transition: background-color var(--transition-var);
 }
 
 .footer-social-svg {
@@ -502,6 +507,9 @@ body {
   height: 44px;
   color: var(--team-svg-color);
   border-radius: 50%;
+
+  transition: color var(--transition-var),
+    background-color var(--transition-var);
 }
 
 .team-social-svg {
@@ -552,6 +560,8 @@ body {
 
   border-radius: 4px;
   border: 1px solid var(--team-svg-color);
+
+  transition: color var(--transition-var), border-color var(--transition-var);
 }
 
 .clients-svg {
@@ -599,6 +609,9 @@ body {
   border-radius: 4px;
   cursor: pointer;
   background-color: var(--secondary-bg-color);
+
+  transition: background-color var(--transition-var),
+    color var(--transition-var), box-shadow var(--transition-var);
 }
 
 .filters-button:hover,
@@ -622,6 +635,8 @@ body {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
+
+  transition: box-shadow var(--transition-var);
 }
 
 .works-link {
