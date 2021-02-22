@@ -9,6 +9,7 @@
   --footer-bg-color: #2f303a;
   --hero-bg-color: #c4c4c4;
   --hero-overlay-color: rgba(47, 48, 58, 0.4);
+  --activities-overlay-color: rgb(18%, 19%, 23%, 0.8);
   --accent-color: #2196f3;
   --border-color: #ececec;
   --border-color-works: #eeeeee;
@@ -396,6 +397,8 @@ body {
 }
 
 .activities-thumb {
+  position: relative;
+
   height: 294px;
 }
 
@@ -403,6 +406,25 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.activities-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+
+  background-color: var(--activities-overlay-color);
 }
 
 /* Наша команда */
