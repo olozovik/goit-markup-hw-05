@@ -19,7 +19,7 @@
   --footer-social-trnsp-white: rgba(255, 255, 255, 0.1);
   --backdrop-color: rgba(0, 0, 0, 0.2);
 
-  --transition-var: 3250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-var: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -336,6 +336,10 @@ body {
   height: 100vh;
 
   background-color: var(--backdrop-color);
+  opacity: 1;
+  visibility: visible;
+
+  transition: opacity var(--transition-var), visibility var(--transition-var);
 }
 
 .order-modal {
@@ -343,15 +347,17 @@ body {
   z-index: 10;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
 
-  width: 528px;
-  height: 581px;
+  min-width: 528px;
+  min-height: 581px;
 
   border-radius: 4px;
   background-color: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transition: transform var(--transition-var);
 }
 
 .order-close {
@@ -370,10 +376,20 @@ body {
   background-color: var(--main-bg-color);
 }
 
+.order-close:active,
+.order-close:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.is-hidden .order-modal {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 /* Benefits */
