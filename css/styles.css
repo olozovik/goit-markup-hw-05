@@ -107,9 +107,7 @@ body {
 }
 
 .menu-link {
-  position: relative;
   display: block;
-
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -123,6 +121,8 @@ body {
 }
 
 .current {
+  position: relative;
+
   color: var(--accent-color);
 }
 
@@ -223,6 +223,8 @@ body {
 
 .address-link {
   color: var(--address-color-link);
+
+  transition: color var(--transition-var);
 }
 
 .address-link:hover,
