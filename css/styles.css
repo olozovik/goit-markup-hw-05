@@ -88,6 +88,7 @@ body {
 
 .header-logo {
   margin-right: 93px;
+
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -140,8 +141,9 @@ body {
 }
 
 .contacts {
-  display: flex;
   margin-left: auto;
+
+  display: flex;
 }
 
 .contacts-item + .contacts-item {
@@ -165,11 +167,13 @@ body {
 
 .contacts-icon-envelope {
   margin-right: 10px;
+
   fill: currentColor;
 }
 
 .contacts-icon-smartphone {
   margin-right: 10px;
+
   fill: currentColor;
 }
 
@@ -197,8 +201,9 @@ body {
 }
 
 .footer-logo {
-  display: block;
   margin-bottom: 20px;
+
+  display: block;
 }
 
 .footer-logo span {
@@ -328,75 +333,6 @@ body {
   background-color: var(--accent-color);
 }
 
-.order-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9;
-
-  width: 100vw;
-  height: 100vh;
-
-  background-color: var(--backdrop-color);
-  opacity: 1;
-  visibility: visible;
-
-  transition: opacity var(--transition-var), visibility var(--transition-var);
-}
-
-.order-modal {
-  position: absolute;
-  z-index: 10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-
-  min-width: 528px;
-  min-height: 581px;
-
-  border-radius: 4px;
-  background-color: var(--main-bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  transition: transform var(--transition-var);
-}
-
-.order-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--main-bg-color);
-
-  transition: background-color var(--transition-var);
-}
-
-.order-close:hover,
-.order-close:active,
-.order-close:focus {
-  outline: none;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.is-hidden .order-modal {
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
 /* Benefits */
 
 .benefits {
@@ -405,20 +341,23 @@ body {
 }
 
 .benefits-list {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .benefits-item {
-  flex-basis: calc(100% / 4 - 30px);
   margin-top: 30px;
   margin-left: 30px;
+
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .benefits-cover {
   margin-bottom: 30px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -460,15 +399,17 @@ body {
 }
 
 .activities-list {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .activities-item {
   margin-top: 30px;
   margin-left: 30px;
+
   flex-basis: calc(100% / 3 - 30px);
 }
 
@@ -490,14 +431,15 @@ body {
   bottom: 0;
 
   width: 100%;
-  text-align: center;
   padding-top: 27px;
   padding-bottom: 27px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--white-text-color);
 
   background-color: var(--activities-overlay-color);
@@ -522,16 +464,18 @@ body {
 }
 
 .team-list {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .team-item {
-  flex-basis: calc(100% / 4 - 30px);
   margin-top: 30px;
   margin-left: 30px;
+
+  flex-basis: calc(100% / 4 - 30px);
 
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -577,6 +521,7 @@ body {
   align-items: center;
   width: 44px;
   height: 44px;
+
   color: var(--team-svg-color);
   border-radius: 50%;
 
@@ -612,9 +557,10 @@ body {
 }
 
 .clients-list {
+  margin-right: -30px;
+
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
 }
 
 .clients-item {
@@ -646,6 +592,77 @@ body {
   border: 1px solid var(--accent-color);
 }
 
+/* Заказать услугу */
+
+.order-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--backdrop-color);
+  opacity: 1;
+
+  transition: opacity var(--transition-var), visibility var(--transition-var);
+}
+
+.order-modal {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  padding: 40px;
+  width: 528px;
+  min-height: 581px;
+
+  border-radius: 4px;
+  background-color: var(--main-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transition: transform var(--transition-var);
+}
+
+.order-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--main-bg-color);
+
+  transition: background-color var(--transition-var);
+}
+
+.order-close:hover,
+.order-close:active,
+.order-close:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-hidden .order-modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
 /* ПОРТФОЛИО */
 
 /* Фильтры */
@@ -656,9 +673,10 @@ body {
 }
 
 .filters {
+  margin-bottom: 50px;
+
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .filters-item:not(:last-child) {
@@ -697,15 +715,17 @@ body {
 /* Наши работы */
 
 .works-list {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .works-item {
   margin-top: 30px;
   margin-left: 30px;
+
   flex-basis: calc(100% / 3 - 30px);
 
   transition: box-shadow var(--transition-var);
