@@ -376,12 +376,15 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--main-bg-color);
+
+  transition: background-color var(--transition-var);
 }
 
+.order-close:hover,
 .order-close:active,
 .order-close:focus {
   outline: none;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .is-hidden {
