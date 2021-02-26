@@ -19,7 +19,7 @@
   --footer-social-trnsp-white: rgba(255, 255, 255, 0.1);
   --backdrop-color: rgba(0, 0, 0, 0.2);
 
-  --duration-var: 250ms;
+  --duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -119,7 +119,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 
-  transition: color var(--duration-var) var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
 }
 
 .current {
@@ -161,7 +161,7 @@ body {
   letter-spacing: 0.02em;
   color: currentColor;
 
-  transition: color var(--duration-var) var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
 }
 
 .contacts-icon-envelope {
@@ -224,7 +224,7 @@ body {
 
 .address-link {
   color: var(--address-color-link);
-  transition: color var(--duration-var) var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
 }
 
 .address-link:hover,
@@ -262,7 +262,7 @@ body {
   border-radius: 50%;
   background-color: var(--footer-social-trnsp-white);
 
-  transition: background-color var(--duration-var) var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function);
 }
 
 .footer-social-svg {
@@ -519,8 +519,8 @@ body {
   color: var(--team-svg-color);
   border-radius: 50%;
 
-  transition: color var(--duration-var) var(--timing-function),
-    background-color var(--duration-var) var(--timing-function);
+  transition: color var(--duration) var(--timing-function),
+    background-color var(--duration) var(--timing-function);
 }
 
 .team-social-svg {
@@ -573,8 +573,8 @@ body {
   border-radius: 4px;
   border: 1px solid var(--team-svg-color);
 
-  transition: color var(--duration-var) var(--timing-function),
-    border-color var(--duration-var) var(--timing-function);
+  transition: color var(--duration) var(--timing-function),
+    border-color var(--duration) var(--timing-function);
 }
 
 .clients-svg {
@@ -601,8 +601,8 @@ body {
   background-color: var(--backdrop-color);
   opacity: 1;
 
-  transition: opacity var(--duration-var) var(--timing-function),
-    visibility var(--duration-var) var(--timing-function);
+  transition: opacity var(--duration) var(--timing-function),
+    visibility var(--duration) var(--timing-function);
 }
 
 .order-modal {
@@ -621,7 +621,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  transition: transform var(--duration-var) var(--timing-function);
+  transition: transform var(--duration) var(--timing-function);
 }
 
 .order-close {
@@ -647,7 +647,7 @@ body {
 }
 
 .order-close-svg {
-  transition: fill var(--duration-var) var(--timing-function);
+  transition: fill var(--duration) var(--timing-function);
 }
 
 .order-close:hover .order-close-svg,
@@ -702,9 +702,9 @@ body {
   cursor: pointer;
   background-color: var(--secondary-bg-color);
 
-  transition: background-color var(--duration-var) var(--timing-function),
-    color var(--duration-var) var(--timing-function),
-    box-shadow var(--duration-var) var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function),
+    color var(--duration) var(--timing-function),
+    box-shadow var(--duration) var(--timing-function);
 }
 
 .filters-button:hover,
@@ -734,7 +734,7 @@ body {
 
 .works-link {
   display: block;
-  transition: box-shadow var(--duration-var) var(--timing-function);
+  transition: box-shadow var(--duration) var(--timing-function);
 }
 
 .works-thumb {
@@ -766,7 +766,7 @@ body {
 
   background-color: var(--works-overlay-color);
 
-  transition: transform var(--duration-var) var(--timing-function);
+  transition: transform var(--duration) var(--timing-function);
 }
 
 .works-content {
